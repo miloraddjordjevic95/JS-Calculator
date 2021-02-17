@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Kalkulator</title>
+      <link href="Style.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <div class="container">
+          <div class="tabela">
+            <table>
+              <tr>
+                <td colspan="3"><input type="text" id="rezultat" class="rezultat" placeholder="Rezultat" readonly></td>
+                <td><button onclick="izbrisiSve()" class="izbrisiSve">&comp;</button></td>
+              </tr>
+              <tr>
+                <td><button onclick="kliknutoDugme(1)">1</button></td>
+                <td><button onclick="kliknutoDugme(2)">2</button></td>
+                <td><button onclick="kliknutoDugme(3)">3</button></td>
+                <td><button onclick="kliknutoDugme('+')">&plus;</button></td>
+              </tr>
+              <tr>
+                <td><button onclick="kliknutoDugme(4)">4</button></td>
+                <td><button onclick="kliknutoDugme(5)">5</button></td>
+                <td><button onclick="kliknutoDugme(6)">6</button></td>
+                <td><button onclick="kliknutoDugme('-')">&hybull;</button></td>
+              </tr>
+              <tr>
+                <td><button onclick="kliknutoDugme(7)">7</button></td>
+                <td><button onclick="kliknutoDugme(8)">8</button></td>
+                <td><button onclick="kliknutoDugme(9)">9</button></td>
+                <td><button onclick="kliknutoDugme('*')">&ast;</button></td>
+              </tr>
+              <tr>
+                <td><button onclick="rezultat.value = eval(rezultat.value)" class="dodela">&equals;</button></td>
+                <td><button onclick="kliknutoDugme(0)">0</button></td>
+                <td><button onclick="kliknutoDugme('.')">&period;</button></td>
+                <td><button onclick="kliknutoDugme('/')">&divide;</button></td>
+              </tr>
+            </table>
+          </div>
+      </div>
+      <script src="Index.js"></script>
+  </body>
+</html>
